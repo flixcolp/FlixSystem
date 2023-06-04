@@ -1,0 +1,12 @@
+name: FlixSystem
+main: me.flixco.testpl.AlteronMC
+author: Flixco
+description: Minecraft plugin für Project Poseidon beta 1.7.3
+version: 1.0
+
+commands:
+  test:
+    usage: /test
+    description: Test command
+  repair:
+    description: Repair items
