@@ -3,6 +3,7 @@ package me.flixco.testpl;
 import me.flixco.testpl.commands.repair;
 import me.flixco.testpl.commands.testcmd;
 import me.flixco.testpl.listeners.BreakListener;
+import me.flixco.testpl.listeners.JoinListener;
 import me.flixco.testpl.listeners.PlaceListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -34,6 +35,7 @@ public class AlteronMC extends JavaPlugin {
 
     Bukkit.getServer().getPluginManager().registerEvents(new PlaceListener(), this);
     Bukkit.getServer().getPluginManager().registerEvents(new BreakListener(), this);
+    Bukkit.getServer().getPluginManager().registerEvents(new JoinListener(), this);
     }
 
     public static AlteronMC getInstance() {
